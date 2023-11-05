@@ -1,0 +1,1718 @@
+1
+ 
+****************************************
+Report : area
+Design : sram
+Version: O-2018.06-SP5-1
+Date   : Sun Nov  5 18:25:41 2023
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+    USERLIB (File: /homes/user/stud/fall23/xw2936/e4823/sram/dc/mem/memory_tt_1p2v_25c_syn.db)
+
+Number of ports:                           30
+Number of nets:                           400
+Number of cells:                          266
+Number of combinational cells:            242
+Number of sequential cells:                 8
+Number of macros/black boxes:              16
+Number of buf/inv:                        139
+Number of references:                      17
+
+Combinational area:               1486.080051
+Buf/Inv area:                      603.360024
+Noncombinational area:             126.720001
+Macro/Black Box area:           219553.437500
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                221166.237552
+Total area:                 undefined
+1
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : sram
+Version: O-2018.06-SP5-1
+Date   : Sun Nov  5 18:25:41 2023
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+    USERLIB (File: /homes/user/stud/fall23/xw2936/e4823/sram/dc/mem/memory_tt_1p2v_25c_syn.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+sram                                   2.72e-03    0.307 4.37e+05    0.311 100.0
+1
+ 
+****************************************
+Report : design
+Design : sram
+Version: O-2018.06-SP5-1
+Date   : Sun Nov  5 18:25:41 2023
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+    USERLIB (File: /homes/user/stud/fall23/xw2936/e4823/sram/dc/mem/memory_tt_1p2v_25c_syn.db)
+
+Local Link Library:
+
+    {/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : tt_1p2v_25c
+    Library : scx3_cmos8rf_lpvt_tt_1p2v_25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    DesignWare
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : sram
+Version: O-2018.06-SP5-1
+Date   : Sun Nov  5 18:25:41 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    d - dont_touch
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+M0                        memory          USERLIB         13722.089844
+                                                                    b, d
+M1                        memory          USERLIB         13722.089844
+                                                                    b, d
+M2                        memory          USERLIB         13722.089844
+                                                                    b, d
+M3                        memory          USERLIB         13722.089844
+                                                                    b, d
+M4                        memory          USERLIB         13722.089844
+                                                                    b, d
+M5                        memory          USERLIB         13722.089844
+                                                                    b, d
+M6                        memory          USERLIB         13722.089844
+                                                                    b, d
+M7                        memory          USERLIB         13722.089844
+                                                                    b, d
+M8                        memory          USERLIB         13722.089844
+                                                                    b, d
+M9                        memory          USERLIB         13722.089844
+                                                                    b, d
+M10                       memory          USERLIB         13722.089844
+                                                                    b, d
+M11                       memory          USERLIB         13722.089844
+                                                                    b, d
+M12                       memory          USERLIB         13722.089844
+                                                                    b, d
+M13                       memory          USERLIB         13722.089844
+                                                                    b, d
+M14                       memory          USERLIB         13722.089844
+                                                                    b, d
+M15                       memory          USERLIB         13722.089844
+                                                                    b, d
+U124                      INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U125                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U126                      NAND3X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U127                      NOR3XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U128                      NOR3XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U129                      NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U130                      NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U131                      NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U132                      NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U133                      NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U134                      NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U135                      NOR3XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U136                      NOR3XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U137                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U138                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U139                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U140                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U141                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U142                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U143                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U144                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U145                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U146                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U147                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U148                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U149                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U150                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U151                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U152                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U153                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U154                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U155                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U156                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U157                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U158                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U159                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U160                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U161                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U162                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U163                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U164                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U165                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U166                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U167                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U168                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U169                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U170                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U171                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U172                      OR3X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U173                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U174                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U175                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U176                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U177                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U178                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U179                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U180                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U181                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U182                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U183                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U184                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U185                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U186                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U187                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U188                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U189                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U190                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U191                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U192                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U193                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U194                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U195                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U196                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U197                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U198                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U199                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U200                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U201                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U202                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U203                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U204                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U205                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U206                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U207                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U208                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U209                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U210                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U211                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U212                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U213                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U214                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U215                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U216                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U217                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U218                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U219                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U220                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U221                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U222                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U223                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U224                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U225                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U226                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U227                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U228                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U229                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U230                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U231                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U232                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U233                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U234                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U235                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U236                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U237                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U238                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U239                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U240                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U241                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U242                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U243                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U244                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U245                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U246                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U247                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U248                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U249                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U250                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U251                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U252                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U253                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U254                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U255                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U256                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U257                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U258                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U259                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U260                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U261                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U262                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U263                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U264                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U265                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U266                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U267                      NAND2BX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U268                      OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U269                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U270                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U271                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U272                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U273                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U274                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U275                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U276                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U277                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U278                      NOR4XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U279                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U280                      NOR3XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U281                      NOR4XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U282                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U283                      NAND2BX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U284                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U285                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U286                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U287                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U288                      NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U289                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U290                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U291                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U292                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U293                      NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U294                      AO22X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U295                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U296                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U297                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U298                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U299                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U300                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U301                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U302                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U303                      NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U304                      AO22X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U305                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U306                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U307                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U308                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U309                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U310                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U311                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U312                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U313                      NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U314                      AO22X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U315                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U316                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U317                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U318                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U319                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U320                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U321                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U322                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U323                      NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U324                      AO22X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U325                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U326                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U327                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U328                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U329                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U330                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U331                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U332                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U333                      NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U334                      AO22X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U335                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U336                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U337                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U338                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U339                      NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U340                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U341                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U342                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U343                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U344                      NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U345                      AO22X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U346                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U347                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U348                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U349                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U350                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U351                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U352                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U353                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U354                      NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U355                      AO22X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U356                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U357                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U358                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U359                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U360                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U361                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U362                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U363                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U364                      NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U365                      AO22X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+q_reg_0_                  TLATXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          15.840000 n
+q_reg_1_                  TLATXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          15.840000 n
+q_reg_2_                  TLATXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          15.840000 n
+q_reg_3_                  TLATXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          15.840000 n
+q_reg_4_                  TLATXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          15.840000 n
+q_reg_5_                  TLATXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          15.840000 n
+q_reg_6_                  TLATXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          15.840000 n
+q_reg_7_                  TLATXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          15.840000 n
+--------------------------------------------------------------------------------
+Total 266 cells                                           221166.237552
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : sram
+Version: O-2018.06-SP5-1
+Date   : Sun Nov  5 18:25:41 2023
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+    i - ideal_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+addr[0]        in      0.0000   0.0000    1.02    0.00   --         
+addr[1]        in      0.0000   0.0000    1.02    0.00   --         
+addr[2]        in      0.0000   0.0000    1.02    0.00   --         
+addr[3]        in      0.0000   0.0000    1.02    0.00   --         
+addr[4]        in      0.0000   0.0000    1.02    0.00   --         
+addr[5]        in      0.0000   0.0000    1.02    0.00   --         
+addr[6]        in      0.0000   0.0000    1.02    0.00   --         
+cen            in      0.0000   0.0000    1.02    0.00   --         
+cen_c[0]       in      0.0000   0.0000    1.02    0.00   --         
+cen_c[1]       in      0.0000   0.0000    1.02    0.00   --         
+cen_c[2]       in      0.0000   0.0000    1.02    0.00   --         
+cen_c[3]       in      0.0000   0.0000    1.02    0.00   --         
+clk            in      0.0000   0.0000    1.02    0.00   --         d, i
+data[0]        in      0.0000   0.0000    1.02    0.00   --         
+data[1]        in      0.0000   0.0000    1.02    0.00   --         
+data[2]        in      0.0000   0.0000    1.02    0.00   --         
+data[3]        in      0.0000   0.0000    1.02    0.00   --         
+data[4]        in      0.0000   0.0000    1.02    0.00   --         
+data[5]        in      0.0000   0.0000    1.02    0.00   --         
+data[6]        in      0.0000   0.0000    1.02    0.00   --         
+data[7]        in      0.0000   0.0000    1.02    0.00   --         
+wen            in      0.0000   0.0000    1.02    0.00   --         
+q[0]           out     0.0050   0.0000   --      --      --         
+q[1]           out     0.0050   0.0000   --      --      --         
+q[2]           out     0.0050   0.0000   --      --      --         
+q[3]           out     0.0050   0.0000   --      --      --         
+q[4]           out     0.0050   0.0000   --      --      --         
+q[5]           out     0.0050   0.0000   --      --      --         
+q[6]           out     0.0050   0.0000   --      --      --         
+q[7]           out     0.0050   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+addr[0]            1      --              --              --        -- 
+addr[1]            1      --              --              --        -- 
+addr[2]            1      --              --              --        -- 
+addr[3]            1      --              --              --        -- 
+addr[4]            1      --              --              --        -- 
+addr[5]            1      --              --              --        -- 
+addr[6]            1      --              --              --        -- 
+cen                1      --              --              --        -- 
+cen_c[0]           1      --              --              --        -- 
+cen_c[1]           1      --              --              --        -- 
+cen_c[2]           1      --              --              --        -- 
+cen_c[3]           1      --              --              --        -- 
+clk                1      --              --              --        -- 
+data[0]            1      --              --              --        -- 
+data[1]            1      --              --              --        -- 
+data[2]            1      --              --              --        -- 
+data[3]            1      --              --              --        -- 
+data[4]            1      --              --              --        -- 
+data[5]            1      --              --              --        -- 
+data[6]            1      --              --              --        -- 
+data[7]            1      --              --              --        -- 
+wen                1      --              --              --        -- 
+q[0]               1      --              --              --        -- 
+q[1]               1      --              --              --        -- 
+q[2]               1      --              --              --        -- 
+q[3]               1      --              --              --        -- 
+q[4]               1      --              --              --        -- 
+q[5]               1      --              --              --        -- 
+q[6]               1      --              --              --        -- 
+q[7]               1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+addr[0]       0.05    0.05    0.05    0.05  clk       4.00  
+addr[1]       0.05    0.05    0.05    0.05  clk       4.00  
+addr[2]       0.05    0.05    0.05    0.05  clk       4.00  
+addr[3]       0.05    0.05    0.05    0.05  clk       4.00  
+addr[4]       0.05    0.05    0.05    0.05  clk       4.00  
+addr[5]       0.05    0.05    0.05    0.05  clk       4.00  
+addr[6]       0.05    0.05    0.05    0.05  clk       4.00  
+cen           0.05    0.05    0.05    0.05  clk       4.00  
+cen_c[0]      0.05    0.05    0.05    0.05  clk       4.00  
+cen_c[1]      0.05    0.05    0.05    0.05  clk       4.00  
+cen_c[2]      0.05    0.05    0.05    0.05  clk       4.00  
+cen_c[3]      0.05    0.05    0.05    0.05  clk       4.00  
+clk           --      --      --      --      --      4.00
+data[0]       0.05    0.05    0.05    0.05  clk       4.00  
+data[1]       0.05    0.05    0.05    0.05  clk       4.00  
+data[2]       0.05    0.05    0.05    0.05  clk       4.00  
+data[3]       0.05    0.05    0.05    0.05  clk       4.00  
+data[4]       0.05    0.05    0.05    0.05  clk       4.00  
+data[5]       0.05    0.05    0.05    0.05  clk       4.00  
+data[6]       0.05    0.05    0.05    0.05  clk       4.00  
+data[7]       0.05    0.05    0.05    0.05  clk       4.00  
+wen           0.05    0.05    0.05    0.05  clk       4.00  
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+addr[0]      INVX1TS            INVX1TS              -- /  --     
+addr[1]      INVX1TS            INVX1TS              -- /  --     
+addr[2]      INVX1TS            INVX1TS              -- /  --     
+addr[3]      INVX1TS            INVX1TS              -- /  --     
+addr[4]      INVX1TS            INVX1TS              -- /  --     
+addr[5]      INVX1TS            INVX1TS              -- /  --     
+addr[6]      INVX1TS            INVX1TS              -- /  --     
+cen          INVX1TS            INVX1TS              -- /  --     
+cen_c[0]     INVX1TS            INVX1TS              -- /  --     
+cen_c[1]     INVX1TS            INVX1TS              -- /  --     
+cen_c[2]     INVX1TS            INVX1TS              -- /  --     
+cen_c[3]     INVX1TS            INVX1TS              -- /  --     
+clk          INVX1TS            INVX1TS              -- /  --     
+data[0]      INVX1TS            INVX1TS              -- /  --     
+data[1]      INVX1TS            INVX1TS              -- /  --     
+data[2]      INVX1TS            INVX1TS              -- /  --     
+data[3]      INVX1TS            INVX1TS              -- /  --     
+data[4]      INVX1TS            INVX1TS              -- /  --     
+data[5]      INVX1TS            INVX1TS              -- /  --     
+data[6]      INVX1TS            INVX1TS              -- /  --     
+data[7]      INVX1TS            INVX1TS              -- /  --     
+wen          INVX1TS            INVX1TS              -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+addr[0]       --      --     --      --     --      --     --     --        -- 
+addr[1]       --      --     --      --     --      --     --     --        -- 
+addr[2]       --      --     --      --     --      --     --     --        -- 
+addr[3]       --      --     --      --     --      --     --     --        -- 
+addr[4]       --      --     --      --     --      --     --     --        -- 
+addr[5]       --      --     --      --     --      --     --     --        -- 
+addr[6]       --      --     --      --     --      --     --     --        -- 
+cen           --      --     --      --     --      --     --     --        -- 
+cen_c[0]      --      --     --      --     --      --     --     --        -- 
+cen_c[1]      --      --     --      --     --      --     --     --        -- 
+cen_c[2]      --      --     --      --     --      --     --     --        -- 
+cen_c[3]      --      --     --      --     --      --     --     --        -- 
+clk           --      --     --      --     --      --     --     --        -- 
+data[0]       --      --     --      --     --      --     --     --        -- 
+data[1]       --      --     --      --     --      --     --     --        -- 
+data[2]       --      --     --      --     --      --     --     --        -- 
+data[3]       --      --     --      --     --      --     --     --        -- 
+data[4]       --      --     --      --     --      --     --     --        -- 
+data[5]       --      --     --      --     --      --     --     --        -- 
+data[6]       --      --     --      --     --      --     --     --        -- 
+data[7]       --      --     --      --     --      --     --     --        -- 
+wen           --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+addr[0]       --      --      --      -- 
+addr[1]       --      --      --      -- 
+addr[2]       --      --      --      -- 
+addr[3]       --      --      --      -- 
+addr[4]       --      --      --      -- 
+addr[5]       --      --      --      -- 
+addr[6]       --      --      --      -- 
+cen           --      --      --      -- 
+cen_c[0]      --      --      --      -- 
+cen_c[1]      --      --      --      -- 
+cen_c[2]      --      --      --      -- 
+cen_c[3]      --      --      --      -- 
+clk           --      --      --      -- 
+data[0]       --      --      --      -- 
+data[1]       --      --      --      -- 
+data[2]       --      --      --      -- 
+data[3]       --      --      --      -- 
+data[4]       --      --      --      -- 
+data[5]       --      --      --      -- 
+data[6]       --      --      --      -- 
+data[7]       --      --      --      -- 
+wen           --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+q[0]          0.05    0.05    0.05    0.05  clk       0.00  
+q[1]          0.05    0.05    0.05    0.05  clk       0.00  
+q[2]          0.05    0.05    0.05    0.05  clk       0.00  
+q[3]          0.05    0.05    0.05    0.05  clk       0.00  
+q[4]          0.05    0.05    0.05    0.05  clk       0.00  
+q[5]          0.05    0.05    0.05    0.05  clk       0.00  
+q[6]          0.05    0.05    0.05    0.05  clk       0.00  
+q[7]          0.05    0.05    0.05    0.05  clk       0.00  
+
+1
+ 
+****************************************
+Report : compile_options
+Design : sram
+Version: O-2018.06-SP5-1
+Date   : Sun Nov  5 18:25:41 2023
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+sram                                     flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         fix_multiple_port_nets feedthroughs
+                                                                constants
+                                                                outputs
+                                                                buffer_constants
+                                         isolate_port           disabled
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : sram
+Version: O-2018.06-SP5-1
+Date   : Sun Nov  5 18:25:41 2023
+****************************************
+
+
+    Design: sram
+
+    max_area               0.00
+  - Current Area       221166.23
+  ------------------------------
+    Slack              -221166.23  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : sram
+Version: O-2018.06-SP5-1
+Date   : Sun Nov  5 18:25:41 2023
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_7_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[7] (memory)                         1.62       1.62 f
+  U363/Y (AOI22X1TS)                       0.22       1.84 r
+  U364/Y (NAND4X1TS)                       0.20       2.04 f
+  U365/Y (AO22X1TS)                        0.49       2.53 f
+  q_reg_7_/D (TLATXLTS)                    0.00       2.53 f
+  data arrival time                                   2.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_7_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.53       2.53
+  data required time                                  2.53
+  -----------------------------------------------------------
+  data required time                                  2.53
+  data arrival time                                  -2.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.53   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_6_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[6] (memory)                         1.62       1.62 f
+  U353/Y (AOI22X1TS)                       0.22       1.84 r
+  U354/Y (NAND4X1TS)                       0.20       2.04 f
+  U355/Y (AO22X1TS)                        0.49       2.53 f
+  q_reg_6_/D (TLATXLTS)                    0.00       2.53 f
+  data arrival time                                   2.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_6_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.53       2.53
+  data required time                                  2.53
+  -----------------------------------------------------------
+  data required time                                  2.53
+  data arrival time                                  -2.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.53   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_5_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[5] (memory)                         1.62       1.62 f
+  U343/Y (AOI22X1TS)                       0.22       1.84 r
+  U344/Y (NAND4X1TS)                       0.20       2.04 f
+  U345/Y (AO22X1TS)                        0.49       2.53 f
+  q_reg_5_/D (TLATXLTS)                    0.00       2.53 f
+  data arrival time                                   2.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_5_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.53       2.53
+  data required time                                  2.53
+  -----------------------------------------------------------
+  data required time                                  2.53
+  data arrival time                                  -2.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.53   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_4_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[4] (memory)                         1.62       1.62 f
+  U332/Y (AOI22X1TS)                       0.22       1.84 r
+  U333/Y (NAND4X1TS)                       0.20       2.04 f
+  U334/Y (AO22X1TS)                        0.49       2.53 f
+  q_reg_4_/D (TLATXLTS)                    0.00       2.53 f
+  data arrival time                                   2.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_4_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.53       2.53
+  data required time                                  2.53
+  -----------------------------------------------------------
+  data required time                                  2.53
+  data arrival time                                  -2.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.53   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_3_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[3] (memory)                         1.62       1.62 f
+  U322/Y (AOI22X1TS)                       0.22       1.84 r
+  U323/Y (NAND4X1TS)                       0.20       2.04 f
+  U324/Y (AO22X1TS)                        0.49       2.53 f
+  q_reg_3_/D (TLATXLTS)                    0.00       2.53 f
+  data arrival time                                   2.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_3_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.53       2.53
+  data required time                                  2.53
+  -----------------------------------------------------------
+  data required time                                  2.53
+  data arrival time                                  -2.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.53   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_2_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[2] (memory)                         1.62       1.62 f
+  U312/Y (AOI22X1TS)                       0.22       1.84 r
+  U313/Y (NAND4X1TS)                       0.20       2.04 f
+  U314/Y (AO22X1TS)                        0.49       2.53 f
+  q_reg_2_/D (TLATXLTS)                    0.00       2.53 f
+  data arrival time                                   2.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_2_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.53       2.53
+  data required time                                  2.53
+  -----------------------------------------------------------
+  data required time                                  2.53
+  data arrival time                                  -2.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.53   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_1_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[1] (memory)                         1.62       1.62 f
+  U302/Y (AOI22X1TS)                       0.22       1.84 r
+  U303/Y (NAND4X1TS)                       0.20       2.04 f
+  U304/Y (AO22X1TS)                        0.49       2.53 f
+  q_reg_1_/D (TLATXLTS)                    0.00       2.53 f
+  data arrival time                                   2.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_1_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.53       2.53
+  data required time                                  2.53
+  -----------------------------------------------------------
+  data required time                                  2.53
+  data arrival time                                  -2.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.53   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_0_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[0] (memory)                         1.62       1.62 f
+  U292/Y (AOI22X1TS)                       0.22       1.84 r
+  U293/Y (NAND4X1TS)                       0.20       2.04 f
+  U294/Y (AO22X1TS)                        0.49       2.53 f
+  q_reg_0_/D (TLATXLTS)                    0.00       2.53 f
+  data arrival time                                   2.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_0_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.53       2.53
+  data required time                                  2.53
+  -----------------------------------------------------------
+  data required time                                  2.53
+  data arrival time                                  -2.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.53   
+  -----------------------------------------------
+
+
+  Startpoint: M3 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_7_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M3/CLK (memory)                          0.00       0.00 r
+  M3/Q[7] (memory)                         1.62       1.62 f
+  U362/Y (AOI22X1TS)                       0.22       1.84 r
+  U364/Y (NAND4X1TS)                       0.19       2.03 f
+  U365/Y (AO22X1TS)                        0.49       2.52 f
+  q_reg_7_/D (TLATXLTS)                    0.00       2.52 f
+  data arrival time                                   2.52
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_7_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.52       2.52
+  data required time                                  2.52
+  -----------------------------------------------------------
+  data required time                                  2.52
+  data arrival time                                  -2.52
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.52   
+  -----------------------------------------------
+
+
+  Startpoint: M3 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_6_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M3/CLK (memory)                          0.00       0.00 r
+  M3/Q[6] (memory)                         1.62       1.62 f
+  U352/Y (AOI22X1TS)                       0.22       1.84 r
+  U354/Y (NAND4X1TS)                       0.19       2.03 f
+  U355/Y (AO22X1TS)                        0.49       2.52 f
+  q_reg_6_/D (TLATXLTS)                    0.00       2.52 f
+  data arrival time                                   2.52
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_6_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.52       2.52
+  data required time                                  2.52
+  -----------------------------------------------------------
+  data required time                                  2.52
+  data arrival time                                  -2.52
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.52   
+  -----------------------------------------------
+
+
+  Startpoint: M3 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_5_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M3/CLK (memory)                          0.00       0.00 r
+  M3/Q[5] (memory)                         1.62       1.62 f
+  U342/Y (AOI22X1TS)                       0.22       1.84 r
+  U344/Y (NAND4X1TS)                       0.19       2.03 f
+  U345/Y (AO22X1TS)                        0.49       2.52 f
+  q_reg_5_/D (TLATXLTS)                    0.00       2.52 f
+  data arrival time                                   2.52
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_5_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.52       2.52
+  data required time                                  2.52
+  -----------------------------------------------------------
+  data required time                                  2.52
+  data arrival time                                  -2.52
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.52   
+  -----------------------------------------------
+
+
+  Startpoint: M3 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_4_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M3/CLK (memory)                          0.00       0.00 r
+  M3/Q[4] (memory)                         1.62       1.62 f
+  U331/Y (AOI22X1TS)                       0.22       1.84 r
+  U333/Y (NAND4X1TS)                       0.19       2.03 f
+  U334/Y (AO22X1TS)                        0.49       2.52 f
+  q_reg_4_/D (TLATXLTS)                    0.00       2.52 f
+  data arrival time                                   2.52
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_4_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.52       2.52
+  data required time                                  2.52
+  -----------------------------------------------------------
+  data required time                                  2.52
+  data arrival time                                  -2.52
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.52   
+  -----------------------------------------------
+
+
+  Startpoint: M3 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_3_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M3/CLK (memory)                          0.00       0.00 r
+  M3/Q[3] (memory)                         1.62       1.62 f
+  U321/Y (AOI22X1TS)                       0.22       1.84 r
+  U323/Y (NAND4X1TS)                       0.19       2.03 f
+  U324/Y (AO22X1TS)                        0.49       2.52 f
+  q_reg_3_/D (TLATXLTS)                    0.00       2.52 f
+  data arrival time                                   2.52
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_3_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.52       2.52
+  data required time                                  2.52
+  -----------------------------------------------------------
+  data required time                                  2.52
+  data arrival time                                  -2.52
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.52   
+  -----------------------------------------------
+
+
+  Startpoint: M3 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_2_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M3/CLK (memory)                          0.00       0.00 r
+  M3/Q[2] (memory)                         1.62       1.62 f
+  U311/Y (AOI22X1TS)                       0.22       1.84 r
+  U313/Y (NAND4X1TS)                       0.19       2.03 f
+  U314/Y (AO22X1TS)                        0.49       2.52 f
+  q_reg_2_/D (TLATXLTS)                    0.00       2.52 f
+  data arrival time                                   2.52
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_2_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.52       2.52
+  data required time                                  2.52
+  -----------------------------------------------------------
+  data required time                                  2.52
+  data arrival time                                  -2.52
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.52   
+  -----------------------------------------------
+
+
+  Startpoint: M3 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_1_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M3/CLK (memory)                          0.00       0.00 r
+  M3/Q[1] (memory)                         1.62       1.62 f
+  U301/Y (AOI22X1TS)                       0.22       1.84 r
+  U303/Y (NAND4X1TS)                       0.19       2.03 f
+  U304/Y (AO22X1TS)                        0.49       2.52 f
+  q_reg_1_/D (TLATXLTS)                    0.00       2.52 f
+  data arrival time                                   2.52
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_1_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.52       2.52
+  data required time                                  2.52
+  -----------------------------------------------------------
+  data required time                                  2.52
+  data arrival time                                  -2.52
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.52   
+  -----------------------------------------------
+
+
+  Startpoint: M3 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_0_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M3/CLK (memory)                          0.00       0.00 r
+  M3/Q[0] (memory)                         1.62       1.62 f
+  U291/Y (AOI22X1TS)                       0.22       1.84 r
+  U293/Y (NAND4X1TS)                       0.19       2.03 f
+  U294/Y (AO22X1TS)                        0.49       2.52 f
+  q_reg_0_/D (TLATXLTS)                    0.00       2.52 f
+  data arrival time                                   2.52
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_0_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.52       2.52
+  data required time                                  2.52
+  -----------------------------------------------------------
+  data required time                                  2.52
+  data arrival time                                  -2.52
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.52   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_3_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[3] (memory)                         1.62       1.62 f
+  U322/Y (AOI22X1TS)                       0.20       1.83 r
+  U323/Y (NAND4X1TS)                       0.20       2.02 f
+  U324/Y (AO22X1TS)                        0.49       2.51 f
+  q_reg_3_/D (TLATXLTS)                    0.00       2.51 f
+  data arrival time                                   2.51
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_3_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.51       2.51
+  data required time                                  2.51
+  -----------------------------------------------------------
+  data required time                                  2.51
+  data arrival time                                  -2.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.51   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_2_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[2] (memory)                         1.62       1.62 f
+  U312/Y (AOI22X1TS)                       0.20       1.83 r
+  U313/Y (NAND4X1TS)                       0.20       2.02 f
+  U314/Y (AO22X1TS)                        0.49       2.51 f
+  q_reg_2_/D (TLATXLTS)                    0.00       2.51 f
+  data arrival time                                   2.51
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_2_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.51       2.51
+  data required time                                  2.51
+  -----------------------------------------------------------
+  data required time                                  2.51
+  data arrival time                                  -2.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.51   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_1_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[1] (memory)                         1.62       1.62 f
+  U302/Y (AOI22X1TS)                       0.20       1.83 r
+  U303/Y (NAND4X1TS)                       0.20       2.02 f
+  U304/Y (AO22X1TS)                        0.49       2.51 f
+  q_reg_1_/D (TLATXLTS)                    0.00       2.51 f
+  data arrival time                                   2.51
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_1_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.51       2.51
+  data required time                                  2.51
+  -----------------------------------------------------------
+  data required time                                  2.51
+  data arrival time                                  -2.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.51   
+  -----------------------------------------------
+
+
+  Startpoint: M5 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg_0_ (positive level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  M5/CLK (memory)                          0.00       0.00 r
+  M5/Q[0] (memory)                         1.62       1.62 f
+  U292/Y (AOI22X1TS)                       0.20       1.83 r
+  U293/Y (NAND4X1TS)                       0.20       2.02 f
+  U294/Y (AO22X1TS)                        0.49       2.51 f
+  q_reg_0_/D (TLATXLTS)                    0.00       2.51 f
+  data arrival time                                   2.51
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg_0_/G (TLATXLTS)                    0.00       0.00 r
+  time borrowed from endpoint              2.51       2.51
+  data required time                                  2.51
+  -----------------------------------------------------------
+  data required time                                  2.51
+  data arrival time                                  -2.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk nominal pulse width                 50.00   
+  library setup time                      -0.38   
+  -----------------------------------------------
+  max time borrow                         49.62   
+  actual time borrow                       2.51   
+  -----------------------------------------------
+
+
+1
